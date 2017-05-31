@@ -1,0 +1,23 @@
+var w = 800;
+var h = 500;
+var basicGame;
+var audioLoop;
+var bgMusic;
+var game;
+var player;
+var playGame;
+var play;
+var speed=800;
+var fireButton;
+var bullet;
+var bulletTime=0;
+var fireButton;
+game = new Phaser.Game(w, h, Phaser.CANVAS, '');
+game.state.add('Menu', Menu);
+game.state.add('playGame', playGame);
+game.state.add('Game');
+game.state.add('about');
+game.state.add('sound');
+game.state.add('bestplayer');
+game.state.start('Menu');
+
